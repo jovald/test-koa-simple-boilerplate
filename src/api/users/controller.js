@@ -5,7 +5,7 @@ exports.read = async () => {
   return users
 }
 
-exports.create = aync ({ data = {} } = {}) => {
+exports.create = async ({ data = {} } = {}) => {
   const user = await User.create(data)
   return user
 }
