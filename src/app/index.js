@@ -16,8 +16,9 @@ exports.start = async () => {
   try {
     await database.connect()
     console.log('Connected to database')
-    await app.listen(3000)
-    console.log('Connection on port 3000');
+    const port = 3000
+    await app.listen(port)
+    console.log(`Connection on port ${port}`);
   } catch (error) {
     console.log('Something went wrong', error)
   }
